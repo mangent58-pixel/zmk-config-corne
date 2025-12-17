@@ -175,10 +175,10 @@
 
         default_layer {
             bindings = <
-&kp LA(GRAVE)   &kp Q  &kp W  &kp E  &kp R      &kp T           &kp Y  &kp U      &kp I              &kp O    &kp P     &kp LEFT_BRACKET
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D  &kp F      &kp G           &kp H  &kp J      &kp K              &kp L    &kp SEMI  &kp SQT
-&kp LA(LCTRL)   &kp Z  &kp X  &kp C  &kp V      &kp B           &kp N  &kp M      &kp COMMA          &kp DOT  &kp FSLH  &kp BACKSPACE
-                              &mo 2  &kp SPACE  &kp LEFT_ALT    &mo 1  &kp ENTER  &kp RIGHT_BRACKET
+&kp GRAVE       &kp Q  &kp W  &kp E  &kp R      &kp T           &kp Y   &kp U      &kp I              &kp O    &kp P     &kp LEFT_BRACKET
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D  &kp F      &kp G           &kp H   &kp J      &kp K              &kp L    &kp SEMI  &kp SQT
+&kp LCTRL       &kp Z  &kp X  &kp C  &kp V      &kp B           &kp N   &kp M      &kp COMMA          &kp DOT  &kp FSLH  &kp BACKSPACE
+                              &mo 2  &kp SPACE  &kp LEFT_ALT    &tog 2  &kp ENTER  &kp RIGHT_BRACKET
             >;
         };
 
@@ -187,16 +187,16 @@
 &bootloader  &sys_reset    &out OUT_TOG  &none         &none         &none           &none         &none         &none         &out OUT_TOG  &sys_reset    &bootloader
 &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
 &none        &kp KP_NUM    &none         &none         &none         &none           &none         &none         &none         &none         &none         &none
-                                         &trans        &trans        &trans          &trans        &trans        &trans
+                                         &trans        &trans        &trans          &tog 0        &trans        &trans
             >;
         };
 
         raise_layer {
             bindings = <
-&trans     &trans          &kp Q   &kp W      &kp E        &kp HOME       &kp NUMBER_1  &kp N8        &kp NUMBER_9  &kp AT_SIGN  &kp HOME  &kp LS(F7)
-&trans     &trans          &kp A   &kp S      &kp D        &kp F          &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp DOLLAR   &kp END   &kp LS(F2)
-&kp LCTRL  &kp LEFT_SHIFT  &trans  &trans     &trans       &kp B          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS    &trans    &out OUT_TOG
-                                   &kp SPACE  &kp LG(F11)  &kp LG(F12)    &trans        &trans        &trans
+&tog 1          &kp TAB         &kp Q   &kp W      &kp E      &kp R          &kp F7        &kp N8        &kp F9        &kp AT_SIGN  &kp HOME      &kp EQUAL
+&kp LEFT_SHIFT  &trans          &kp A   &kp S      &kp D      &kp F          &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp DOLLAR   &kp END       &kp PRINTSCREEN
+&kp LCTRL       &kp LEFT_SHIFT  &trans  &trans     &kp G      &kp B          &kp F1        &kp F2        &kp NUMBER_3  &kp MINUS    &kp C_VOL_DN  &kp C_VOL_UP
+                                        &kp SPACE  &kp SPACE  &kp LG(F12)    &tog 0        &kp ENTER     &kp N0
             >;
         };
 
